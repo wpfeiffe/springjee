@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="empjpa">
+    <output-path>$PROJECT_DIR$/out/artifacts/empjpa.jar</output-path>
+    <root id="archive" name="empjpa.jar">
+      <element id="module-output" name="jpa" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/jpa/src/main/resources/META-INF/MANIFEST.MF" />
+        <element id="jpa-descriptors" facet="jpa/jpa/JPA" />
+      </element>
+    </root>
+  </artifact>
+</component>
