@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'idea'
+apply plugin: 'eclipse'
 
 configurations {
     provided
@@ -22,8 +23,16 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.7'
 }
 
+// optional: if using 'idea' plugin
 idea {
   module{
     scopes.PROVIDED.plus += configurations.provided
+  }
+}
+
+// optional: if using 'eclipse' plugin
+eclipse {
+  classpath {
+    plusConfigurations += configurations.provided
   }
 }
