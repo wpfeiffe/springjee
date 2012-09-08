@@ -24,47 +24,503 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/groovy" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="jpa" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-jaxr-api_1.0_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jsf-api-2.0.3-b05" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="asm-commons-3.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="asm-tree-3.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-connector-api_1.5_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jsr181-api-1.0-MR1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="asm-analysis-3.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-ejb-api_3.1_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="asm-3.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-jaxrpc-api_1.1_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jstl-1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="groovy-1.8.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="jboss-jsp-api_2.2_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-servlet-api_3.0_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="asm-util-3.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="mail-1.4.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-saaj-api_1.3_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-transaction-api_1.1_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-el-api_2.2_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-jacc-api_1.4_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-jaspi-api_1.0_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jaxrs-api-2.1.0.GA" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="javax.inject-1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="hibernate-jpa-2.0-api-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="antlr-2.7.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-annotations-api_1.1_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="TEST" name="junit-4.7" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="validation-api-1.0.0.GA" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="asm-tree-3.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="stax-api-1.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-saaj-api_1.3_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-jaxws-api_2.2_spec-1.0.0.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="jboss-jms-api_1.1_spec-1.0.0.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="jaxrpc-api-1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-jaxws-api_2.2_spec-1.0.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="groovy-1.8.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="activation-1.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jstl-1.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="cdi-api-1.0-SP4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="jboss-jaxb-api_2.2_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-annotations-api_1.1_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-jaxr-api_1.0_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="hibernate-jpa-2.0-api-1.0.0.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="jboss-interceptors-api_1.1_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="activation-1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="asm-commons-3.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="antlr-2.7.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="cdi-api-1.0-SP4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="mail-1.4.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-transaction-api_1.1_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-jaspi-api_1.0_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-jaxrpc-api_1.1_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-el-api_2.2_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="javax.inject-1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="asm-3.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="asm-analysis-3.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-jaxb-api_2.2_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jaxrs-api-2.1.0.GA" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="jboss-jad-api_1.2_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-connector-api_1.5_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-ejb-api_3.1_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="TEST" name="junit-4.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="asm-util-3.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="validation-api-1.0.0.GA" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jsf-api-2.0.3-b05" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-servlet-api_3.0_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jboss-jacc-api_1.4_spec-1.0.0.Final" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="jsr181-api-1.0-MR1" level="project" />
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.codehaus.groovy/groovy/1.8.4/jar/344c49f07cf37471935d5103b6cbe7c5aaa09445/groovy-1.8.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.codehaus.groovy/groovy/1.8.4/source/a527e83e5c715540108d8f2b86ca19a3c9c78ac1/groovy-1.8.4-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/antlr/antlr/2.7.7/jar/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm/3.2/jar/9bc1511dec6adf302991ced13303e4140fdf9ab7/asm-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm-tree/3.2/jar/cd792e29c79d170c5d0bdd05adf5807cf6875c90/asm-tree-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm-commons/3.2/jar/e7a19b8c60589499e35f5d2068d09013030b8891/asm-commons-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm-util/3.2/jar/37ebfdad34d5f1f45109981465f311bbfbe82dcf/asm-util-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm-analysis/3.2/jar/c624956db93975b7197699dcd7de6145ca7cf2c8/asm-analysis-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.annotation/jboss-annotations-api_1.1_spec/1.0.0.Final/jar/394e909e8b61259bcd63e9ba8b0d7a636d8db479/jboss-annotations-api_1.1_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.annotation/jboss-annotations-api_1.1_spec/1.0.0.Final/source/749eb3ec8063d0a1ae2bb965640a5604181d7c2a/jboss-annotations-api_1.1_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/jar/2ab6236535e085d86f37fd97ddfdd35c88c1a419/jboss-transaction-api_1.1_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.0.Final/source/9bbc5381224289a1cf67988c661a1dcdc165b9ff/jboss-transaction-api_1.1_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.resource/jboss-connector-api_1.5_spec/1.0.0.Final/jar/a94f4dff833a6cd37eb1162b3e93db3ec1d378e4/jboss-connector-api_1.5_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.resource/jboss-connector-api_1.5_spec/1.0.0.Final/source/8a165bc8f7f2d6cc1145474b6d2459fef63cb5da/jboss-connector-api_1.5_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.xml/jaxrpc-api/1.1/jar/64e6fa9461f714ab2c1a66d552e3200e66d2510b/jaxrpc-api-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.ejb/jboss-ejb-api_3.1_spec/1.0.0.Final/jar/a80dba5a275de9584707582137203a7a749fdc9c/jboss-ejb-api_3.1_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.ejb/jboss-ejb-api_3.1_spec/1.0.0.Final/source/f2212ebfe5318948e47eeee8d92bd3402c3e9a3f/jboss-ejb-api_3.1_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.el/jboss-el-api_2.2_spec/1.0.0.Final/jar/39d6bd0272bae967e99a60de2c8cf1754e13cfc9/jboss-el-api_2.2_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.el/jboss-el-api_2.2_spec/1.0.0.Final/source/9246974930dd82acdc1526d1101470e5fbbf710c/jboss-el-api_2.2_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Final/jar/30f4b941417a72fe02b06a849f85b010467b3e1f/jboss-interceptors-api_1.1_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Final/source/4b510dbd35bb67c656c6921e10c4e45fdbea75aa/jboss-interceptors-api_1.1_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.servlet/jboss-servlet-api_3.0_spec/1.0.0.Final/jar/44fb8e9dff4a0ec4081bb5492b9a3a9ab9c3466b/jboss-servlet-api_3.0_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.servlet/jboss-servlet-api_3.0_spec/1.0.0.Final/source/c4d0c1b8f52aaf0b73b5277c0ec0bdfdb7f2ecbe/jboss-servlet-api_3.0_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.security.jacc/jboss-jacc-api_1.4_spec/1.0.0.Final/jar/b69cb291327ad0009870eb485fbf1b9d41708ab1/jboss-jacc-api_1.4_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.security.jacc/jboss-jacc-api_1.4_spec/1.0.0.Final/source/855bf4eeaf1d809ce2e36eb883d7e5af6f5626b/jboss-jacc-api_1.4_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.enterprise.deploy/jboss-jad-api_1.2_spec/1.0.0.Final/jar/fe6298a32dbe475a156339d3a3a8e20bc802bcab/jboss-jad-api_1.2_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.enterprise.deploy/jboss-jad-api_1.2_spec/1.0.0.Final/source/d0af6ef72ec2a9584b8f2fc5f75a2b3f85274572/jboss-jad-api_1.2_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.security.auth.message/jboss-jaspi-api_1.0_spec/1.0.0.Final/jar/a2832db1f8f3577f2cb1c20dcca034e7f7359c1e/jboss-jaspi-api_1.0_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.security.auth.message/jboss-jaspi-api_1.0_spec/1.0.0.Final/source/7babef325c4c428565a7ea600ac479740d977ffe/jboss-jaspi-api_1.0_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.activation/activation/1.1/jar/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.activation/activation/1.1/source/3697e9f67a2ed7ac5f589cff30f21173299440/activation-1.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.registry/jboss-jaxr-api_1.0_spec/1.0.0.Final/jar/20251b85415fc1fcd73554a0d04a678d7a7aefc7/jboss-jaxr-api_1.0_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.registry/jboss-jaxr-api_1.0_spec/1.0.0.Final/source/790c38f81cc0d1e7608ad836be4bf25b3aaf60cd/jboss-jaxr-api_1.0_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.jms/jboss-jms-api_1.1_spec/1.0.0.Final/jar/fcf14e80bb363847b0ed955df0a5a01242b9f26/jboss-jms-api_1.1_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.jms/jboss-jms-api_1.1_spec/1.0.0.Final/source/7bdd9af5da9f5299f8cc691d868f8680cd9eb63e/jboss-jms-api_1.1_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.servlet.jsp/jboss-jsp-api_2.2_spec/1.0.0.Final/jar/2b629bc9a598edc1f56ae6c98ca92c8346e27834/jboss-jsp-api_2.2_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.servlet.jsp/jboss-jsp-api_2.2_spec/1.0.0.Final/source/fea36045acfc380ae7029ce68c1f0910bc74e87/jboss-jsp-api_2.2_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.bind/jboss-jaxb-api_2.2_spec/1.0.0.Final/jar/6036055b429b25cda82714cc87bd304be06986a7/jboss-jaxb-api_2.2_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.bind/jboss-jaxb-api_2.2_spec/1.0.0.Final/source/55eb30e4cc543f18ef69bea823d07e6e57420254/jboss-jaxb-api_2.2_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.rpc/jboss-jaxrpc-api_1.1_spec/1.0.0.Final/jar/1a10a2215a433d5102aef193692557709ae49573/jboss-jaxrpc-api_1.1_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.rpc/jboss-jaxrpc-api_1.1_spec/1.0.0.Final/source/b9bf6cc26513004a16e17d8c735184e9f276aaad/jboss-jaxrpc-api_1.1_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.soap/jboss-saaj-api_1.3_spec/1.0.0.Final/jar/6aa2fe20556e61f21304c1037aa344d2d08405cd/jboss-saaj-api_1.3_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.soap/jboss-saaj-api_1.3_spec/1.0.0.Final/source/c959d21d45671cd00641efe1065612e83eac79ad/jboss-saaj-api_1.3_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.ws/jboss-jaxws-api_2.2_spec/1.0.0.Final/jar/8f0ab4968228c8447b59ec179b3a36c66925b499/jboss-jaxws-api_2.2_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.spec.javax.xml.ws/jboss-jaxws-api_2.2_spec/1.0.0.Final/source/d69ad4dda0e8d417da28a2520b4bde81471dc8a0/jboss-jaxws-api_2.2_spec-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.inject/javax.inject/1/jar/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.inject/javax.inject/1/source/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.enterprise/cdi-api/1.0-SP4/jar/6e38490033eb8b36c4cf1f7605163424a574dcf0/cdi-api-1.0-SP4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.enterprise/cdi-api/1.0-SP4/source/c8a80687c76c4fa34d566ae8b6634f1dfb7aecf0/cdi-api-1.0-SP4-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/com.sun.faces/jsf-api/2.0.3-b05/jar/d959dddbb55c2e9b83dab786967e0680d385cd93/jsf-api-2.0.3-b05.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.jws/jsr181-api/1.0-MR1/jar/401cc1d0e5f0d8f4d0532a54928ceaa27ec21258/jsr181-api-1.0-MR1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.jws/jsr181-api/1.0-MR1/source/91949f9602ca47ff97f3b269076335a615e0d5e3/jsr181-api-1.0-MR1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.mail/mail/1.4.2/jar/6a1d836b6a4c77ec11ac46d2ea8557ca574cd428/mail-1.4.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.mail/mail/1.4.2/source/d83de697786c3ffc8785188fe2e2920c37b38423/mail-1.4.2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.servlet/jstl/1.2/jar/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.servlet/jstl/1.2/source/2f5877ef15adb721421e80f5aa2b6fe069eec8ed/jstl-1.2-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.0.Final/jar/6728add2c60f6621c3a77ba71fe6f6b798d14ee0/hibernate-jpa-2.0-api-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.0.Final/source/128bc9abe5471c31890b014ed6579b292f652a5b/hibernate-jpa-2.0-api-1.0.0.Final-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.resteasy/jaxrs-api/2.1.0.GA/jar/6b35db4c5db99999f2e2e7c7ae7c4723c8a942c4/jaxrs-api-2.1.0.GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.jboss.resteasy/jaxrs-api/2.1.0.GA/source/b6e0e55faffbcc4bdd70d4ae27dd02fcab6bb7f2/jaxrs-api-2.1.0.GA-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/stax/stax-api/1.0.1/jar/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.validation/validation-api/1.0.0.GA/jar/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.validation/validation-api/1.0.0.GA/source/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.codehaus.groovy/groovy/1.8.4/jar/344c49f07cf37471935d5103b6cbe7c5aaa09445/groovy-1.8.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.codehaus.groovy/groovy/1.8.4/source/a527e83e5c715540108d8f2b86ca19a3c9c78ac1/groovy-1.8.4-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/antlr/antlr/2.7.7/jar/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm/3.2/jar/9bc1511dec6adf302991ced13303e4140fdf9ab7/asm-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm-tree/3.2/jar/cd792e29c79d170c5d0bdd05adf5807cf6875c90/asm-tree-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm-commons/3.2/jar/e7a19b8c60589499e35f5d2068d09013030b8891/asm-commons-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm-util/3.2/jar/37ebfdad34d5f1f45109981465f311bbfbe82dcf/asm-util-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/asm/asm-analysis/3.2/jar/c624956db93975b7197699dcd7de6145ca7cf2c8/asm-analysis-3.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="jpa" exported="" />
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/junit/junit/4.7/jar/d9444742a5b897c6280724a49f57a8155517d21f/junit-4.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/junit/junit/4.7/source/b75d1751cddae5eaa612e5926ec76987caed08df/junit-4.7-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 
