@@ -18,6 +18,7 @@ dependencies {
     provided group: 'org.codehaus.groovy', name: 'groovy', version: '1.8.4'
     provided 'org.jboss.spec:jboss-javaee-6.0:1.0.0.Final'
     provided 'org.hibernate:hibernate-core:4.0.1.Final'
+    provided 'org.springframework.data:spring-data-jpa:1.1.0.RELEASE'
     testCompile group: 'junit', name: 'junit', version: '4.7'
 
 }
