@@ -17,35 +17,38 @@
     <title>Show Employee List</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/DT_Bootstrap.css" rel="stylesheet">
 
     <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.dataTables.js"></script>
     <%--<script type="text/javascript" src="js/bootstrap.js"></script>--%>
     <script type="text/javascript" src="js/DT_Bootstrap.js"></script>
+    <style>
+        body {
+        padding-top: 60px; /* When using the navbar-top-fixed */
+        }
+    </style>
 </head>
-<body>
-
+<body >
+<div class="container" style="margin-top: 10px">
 <!-- Navbar -->
-<%--<div id="mainnav" class="navbar navbar-inverse navbar-fixed-top">--%>
-    <%--<div class="navbar-inner">--%>
-        <%--<div class="container">--%>
-            <%--<div class="nav-collapse">--%>
-                <%--<ul class="nav nav-pills">--%>
-                    <%--<li class="active"><a href="./listemp.htm">Home</a></li>--%>
-                    <%--<li class=""><a href="./listemp.htm">Emp</a></li>--%>
-                    <%--<li class=""><a href="./listemp.htm">List</a></li>--%>
-                    <%--<li class=""><a href="./listemp.htm">Test</a></li>--%>
-                <%--</ul>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-    <%--</div>--%>
-<%--</div>--%>
+<div id="mainnav" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <div class="nav-collapse">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="./listemp.htm">Home</a></li>
+                    <li class=""><a href="./listemp.htm">Emp</a></li>
+                    <li class=""><a href="./listemp.htm">List</a></li>
+                    <li class=""><a href="./listemp.htm">Test</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Table of employees -->
 <%--<table class="table table-striped table-bordered table-condensed">--%>
-<div class="row-fluid"><div class="span8">
 <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example">
     <thead>
         <tr>
@@ -66,6 +69,6 @@
         </c:forEach>
     </tbody>
 </table>
-</div></div>
+</div>
 </body>
 </html>
