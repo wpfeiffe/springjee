@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Employee Local Postgres" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1a44f595-7c2b-41a9-a200-3a8aded1d03c">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql://localhost:5432/employee</jdbc-url>
+    <user-name>postgres</user-name>
+    <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
+    <default-dialect>PostgreSQL</default-dialect>
+    <libraries>
+      <library>
+        <url>file://$PROJECT_DIR$/jpa/jboss/modules/org/postgresql/main/postgresql-9.1-901.jdbc4.jar</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>
