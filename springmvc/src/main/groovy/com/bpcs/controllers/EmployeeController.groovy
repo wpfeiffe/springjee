@@ -22,7 +22,7 @@ class EmployeeController
         mav.setViewName("/jsp/twitboot/listemp")
         mav.addObject("message", "Hello")
         HelloWorldBean hello = new InitialContext().lookup("java:app/springmvc/HelloWorldEJB")
-        String message = hello.doEcho("MY New Stuff: Hello from the HelloGroovyController")
+        String message = hello.doEcho("Hello from the HelloGroovyController : Testing EL")
         List emps = hello.getEmployees()
         Employee emp = hello.getSpringJPAEmployee(6L)
         List<Employee> johns = hello.getJohns()

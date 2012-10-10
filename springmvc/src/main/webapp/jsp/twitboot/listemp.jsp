@@ -11,6 +11,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="bpcs" uri="http://test.bpcs.com/bpcs-taglib" %>
 
 <html lang="en">
 <head>
@@ -70,5 +71,6 @@
     </tbody>
 </table>
 </div>
+<div class="alert alert-success"><bpcs:testel testAttribute="${message}"/></div>
 </body>
 </html>
