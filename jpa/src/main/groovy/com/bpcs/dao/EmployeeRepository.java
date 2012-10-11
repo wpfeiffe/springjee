@@ -1,7 +1,7 @@
 package com.bpcs.dao;
 
 import com.bpcs.jpa.Employee;
-import org.springframework.data.repository.Repository;
+import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import java.util.List;
  * User: wpfeiffe
  * Date: 9/13/12
  */
-public interface EmployeeRepository extends Repository<Employee, Long>
+public interface EmployeeRepository extends CrudRepository<Employee, Long>
 {
     List<Employee> findByLastNameAndFirstName(String lastName, String firstName);
     Employee findById(Long id);

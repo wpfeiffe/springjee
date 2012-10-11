@@ -35,11 +35,26 @@ class Employee implements Serializable
     @Column(name="TITLE")
     @Basic String title
 
+    @Column(name="ACTIVE")
+    @Basic Boolean active
+
+    @Column(name="START_DATE")
+    @Basic Date startDate
+
+    @Column(name="EMPLOYEE_TEXT")
+    @Basic String employeeText
+
     @ManyToOne(optional=false)
     @JoinColumn(name="DEPARTMENT_ID")
     Department dept;
 
-    public Employee() {}
+    public Employee()
+    {
+        // set some defaults for new emps
+        this.active = true
+        this.startDate = new Date()
+        this.employeeText = "This is an employee"
+    }
 
     public Employee(String firstName, String lastName, String ssn, String title)
     {
@@ -47,6 +62,9 @@ class Employee implements Serializable
         this.lastName = lastName
         this.ssn = ssn
         this.title = title
+        this.active = true
+        this.startDate = new Date()
+        this.employeeText = "This is an employee"
 
     }
 
@@ -54,6 +72,5 @@ class Employee implements Serializable
     {
         return "Employee ID: $id, Version: $version, First: $firstName, Last: $lastName, SSN: $ssn, Title: $title, Dept:${dept.deptName} "
     }
-
 
 }

@@ -4,7 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.servlet.ModelAndView
 import javax.naming.InitialContext
-import com.bpcs.svc.HelloWorldBean
+
+import com.bpcs.svc.EmployeeSvc
 
 /**
  * Created by IntelliJ IDEA.
@@ -22,7 +23,7 @@ class HelloGroovyController
     {
         ModelAndView mav = new ModelAndView()
         mav.setViewName("hello")
-        HelloWorldBean hello = new InitialContext().lookup("java:app/springmvc/HelloWorldEJB")
+        EmployeeSvc hello = new InitialContext().lookup("java:app/springmvc/HelloWorldEJB")
         String message = hello.doEcho("MY New Stuff: Hello from the HelloGroovyController")
         List emps = hello.getEmployees()
         mav.addObject("message", message)

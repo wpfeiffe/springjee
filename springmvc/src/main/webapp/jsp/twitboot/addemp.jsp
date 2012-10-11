@@ -70,6 +70,5 @@
     </tbody>
 </table>
 </div>
-<div class="alert alert-success"><bpcs:testel testAttribute="${message}"/></div>
 </body>
 </html>

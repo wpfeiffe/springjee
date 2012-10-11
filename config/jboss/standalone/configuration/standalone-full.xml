@@ -313,6 +313,10 @@
                         <entry name="queue/test"/>
                         <entry name="java:jboss/exported/jms/queue/test"/>
                     </jms-queue>
+                    <jms-queue name="employeeQueue">
+                        <entry name="queue/employee"/>
+                        <entry name="java:jboss/exported/jms/queue/employee"/>
+                    </jms-queue>
                     <jms-topic name="testTopic">
                         <entry name="topic/test"/>
                         <entry name="java:jboss/exported/jms/topic/test"/>
@@ -431,4 +435,6 @@
         </outbound-socket-binding>
     </socket-binding-group>
 
+    <deployments>
+    </deployments>
 </server>
