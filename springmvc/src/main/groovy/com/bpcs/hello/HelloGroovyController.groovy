@@ -23,7 +23,7 @@ class HelloGroovyController
     {
         ModelAndView mav = new ModelAndView()
         mav.setViewName("hello")
-        EmployeeSvc hello = new InitialContext().lookup("java:app/springmvc/HelloWorldEJB")
+        EmployeeSvc hello = new InitialContext().lookup("java:module/HelloWorldEJB")
         String message = hello.doEcho("MY New Stuff: Hello from the HelloGroovyController")
         List emps = hello.getEmployees()
         mav.addObject("message", message)

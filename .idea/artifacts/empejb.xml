@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="ejb-jar" name="ejbsvc">
-    <output-path>$PROJECT_DIR$/out/artifacts/ejbsvc.jar</output-path>
-    <root id="archive" name="ejbsvc.jar">
+  <artifact type="ejb-jar" name="empejb">
+    <output-path>$PROJECT_DIR$/out/artifacts/empejb.jar</output-path>
+    <root id="archive" name="empejb.jar">
       <element id="module-output" name="ejb" />
       <element id="directory" name="META-INF">
         <element id="javaee-facet-resources" facet="ejb/ejb/EJB" />

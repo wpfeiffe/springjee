@@ -18,10 +18,10 @@ import com.bpcs.svc.EmployeeSvc
 @Controller
 class EmployeeController
 {
-    @EJB(mappedName="java:app/springmvc/EmployeeSvc")
+    @EJB(mappedName="java:module/EmployeeSvc")
     EmployeeSvc employeeSvc
 
-    @EJB(mappedName="java:app/springmvc/OfflineEmployeeSvc")
+    @EJB(mappedName="java:module/OfflineEmployeeSvc")
     OfflineEmployeeSvc offlineEmployeeSvc
 
     @RequestMapping("/listemp")
