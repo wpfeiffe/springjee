@@ -37,6 +37,11 @@
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-tx/3.1.2.RELEASE/jar/f9efe9e07e73ab593de0353e01b8bcbaafbfd3c1/spring-tx-3.1.2.RELEASE.jar" />
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-web/3.1.2.RELEASE/jar/34a73557b66ea3c68892c042f2c9ba7e8bff8eac/spring-web-3.1.2.RELEASE.jar" />
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-webmvc/3.1.2.RELEASE/jar/e02f3e5aa91c8caa37b2e9b780229d27e76c0f2e/spring-webmvc-3.1.2.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-jdbc/3.0.7.RELEASE/jar/c53d9bf4e6a6a6cf49c7d7630e612042364295a1/spring-jdbc-3.0.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.security/spring-security-config/3.1.2.RELEASE/jar/dd18c4dae2367e033fed301458ddbec932ce6366/spring-security-config-3.1.2.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.security/spring-security-core/3.1.2.RELEASE/jar/4d643e7507d950cb49c91df7266f60a28fd08ea4/spring-security-core-3.1.2.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.security/spring-security-web/3.1.2.RELEASE/jar/e43e7683289f08c1e073564a94e6f26298ec4f59/spring-security-web-3.1.2.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-tx/3.0.7.RELEASE/jar/c340bf8606f6bf235bc1277d25315df1abe51c31/spring-tx-3.0.7.RELEASE.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="springmvc/web/Web" />

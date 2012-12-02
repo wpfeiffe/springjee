@@ -27,9 +27,6 @@ public class EmployeeMessageBean implements MessageListener
     @EJB
     EmployeeSvc employeeSvc;
 
-
-
-
     public EmployeeMessageBean() {}
 
     public void onMessage(Message message)

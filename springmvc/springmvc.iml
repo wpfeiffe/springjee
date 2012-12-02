@@ -388,6 +388,39 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.security/spring-security-core/3.1.2.RELEASE/jar/4d643e7507d950cb49c91df7266f60a28fd08ea4/spring-security-core-3.1.2.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.security/spring-security-core/3.1.2.RELEASE/source/b4aee201f748019bd64daa0ad6db8157fe549b9e/spring-security-core-3.1.2.RELEASE-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.security/spring-security-config/3.1.2.RELEASE/jar/dd18c4dae2367e033fed301458ddbec932ce6366/spring-security-config-3.1.2.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.security/spring-security-config/3.1.2.RELEASE/source/1e5d582000b398d2e110bfad6609c12d97ea911c/spring-security-config-3.1.2.RELEASE-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.security/spring-security-web/3.1.2.RELEASE/jar/e43e7683289f08c1e073564a94e6f26298ec4f59/spring-security-web-3.1.2.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.security/spring-security-web/3.1.2.RELEASE/source/49e8d929d835d4ba4556ba9d138488ecc083a794/spring-security-web-3.1.2.RELEASE-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.data/spring-data-jpa/1.1.0.RELEASE/jar/eb5a5325107e8a8b025aa8a799d9d385a04ea962/spring-data-jpa-1.1.0.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -552,6 +585,28 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-tx/3.0.7.RELEASE/jar/c340bf8606f6bf235bc1277d25315df1abe51c31/spring-tx-3.0.7.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-tx/3.0.7.RELEASE/source/79194ce07a854e95767080806b4ea3327e2a438d/spring-tx-3.0.7.RELEASE-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-jdbc/3.0.7.RELEASE/jar/c53d9bf4e6a6a6cf49c7d7630e612042364295a1/spring-jdbc-3.0.7.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-jdbc/3.0.7.RELEASE/source/f8d21447241bc7a5298ea838135c7de68eac2f4f/spring-jdbc-3.0.7.RELEASE-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.hamcrest/hamcrest-core/1.1/jar/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -579,39 +634,6 @@
         <JAVADOC />
         <SOURCES>
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework.data/spring-data-commons-core/1.3.0.RELEASE/source/d48ef2c32282e484e8719bd955abc26e0b73b7df/spring-data-commons-core-1.3.0.RELEASE-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-tx/3.1.2.RELEASE/jar/f9efe9e07e73ab593de0353e01b8bcbaafbfd3c1/spring-tx-3.1.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-tx/3.1.2.RELEASE/source/11b2b3b9f346ca3be0dcf79d59a3e23fdf99c172/spring-tx-3.1.2.RELEASE-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-jdbc/3.1.2.RELEASE/jar/777639dc0dabe1ec518c9f67571b84fa74c9a83d/spring-jdbc-3.1.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-jdbc/3.1.2.RELEASE/source/4a0bc9e0bf1634482e58c91db793a6e1121e8365/spring-jdbc-3.1.2.RELEASE-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-orm/3.1.2.RELEASE/jar/164975b38b596af2d353b637dbbe39b4167e2c16/spring-orm-3.1.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.springframework/spring-orm/3.1.2.RELEASE/source/462cec68e2d4b2bf99f9264f3403a22e0898f421/spring-orm-3.1.2.RELEASE-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>

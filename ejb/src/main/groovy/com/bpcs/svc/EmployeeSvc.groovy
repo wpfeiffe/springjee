@@ -13,7 +13,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
 import java.util.List
-import javax.ejb.Local;
+import javax.ejb.Local
+import javax.annotation.Resource;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,6 +27,9 @@ import javax.ejb.Local;
 @Local(EmployeeSvc.class)
 public class EmployeeSvc
 {
+
+    final private static String EMP_CACHE = "EMP_CACHE"
+
     private static List firstNames = ["Harry", "Steve", "Nancy", "Jennifer", "Stacy", "John", "Greg"]
     private static List lastNames = ["Smith", "Jones", "Stein", "Johnson", "Wills", "Bernard", "Stark"]
     private static List departments = ["MIS", "ACCT", "OPS", "MKT", "HR"]
@@ -38,11 +42,16 @@ public class EmployeeSvc
     private EmployeeRepository employeeRepository;
     private DepartmentRepository departmentRepository;
 
+    @Resource(lookup="java:jboss/infinispan/employee")
+    private org.infinispan.manager.CacheContainer container;
+    private org.infinispan.Cache<String, Object> cache;
+
     @PostConstruct
     public void init() {
        RepositoryFactorySupport factory = new JpaRepositoryFactory(em);
        this.employeeRepository = factory.getRepository(EmployeeRepository.class);
        this.departmentRepository = factory.getRepository(DepartmentRepository.class);
+       this.cache = this.container.getCache();
     }
 
     public EmployeeSvc()
@@ -58,9 +67,16 @@ public class EmployeeSvc
     {
         List emps;
         EmpDeptDAO empdao = new EmpDeptDAO(em);
-        if (empdao != null)
+        List cachedEmployees = cache.get(EmployeeSvc.EMP_CACHE)
+
+        if (cachedEmployees != null)
+        {
+            emps = cachedEmployees
+        }
+        else if (empdao != null)
         {
             emps = empdao.getAllEmployees();
+            cache.put(EmployeeSvc.EMP_CACHE, emps)
         }
         else
         {
@@ -102,5 +118,6 @@ public class EmployeeSvc
     public void addNewEmp(Employee newEmployee)
     {
         employeeRepository.save(newEmployee)
+        cache.remove(EmployeeSvc.EMP_CACHE)
     }
 }

@@ -192,6 +192,9 @@
                     <eviction strategy="NONE"/>
                 </local-cache>
             </cache-container>
+            <cache-container name="employee" default-cache="employee-cache" jndi-name="java:jboss/infinispan/employee">
+                <local-cache name="employee-cache"/>
+            </cache-container>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:jacorb:1.1">
             <orb>
@@ -435,6 +438,4 @@
         </outbound-socket-binding>
     </socket-binding-group>
 
-    <deployments>
-    </deployments>
 </server>
