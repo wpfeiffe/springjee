@@ -42,7 +42,7 @@ public class EmployeeSvc
     private EmployeeRepository employeeRepository;
     private DepartmentRepository departmentRepository;
 
-    @Resource(lookup="java:jboss/infinispan/employee")
+    @Resource(name="java:jboss/infinispan/employee")
     private org.infinispan.manager.CacheContainer container;
     private org.infinispan.Cache<String, Object> cache;
 

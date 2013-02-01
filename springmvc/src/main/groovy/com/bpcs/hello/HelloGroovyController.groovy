@@ -8,11 +8,9 @@ import javax.naming.InitialContext
 import com.bpcs.svc.EmployeeSvc
 
 /**
- * Created by IntelliJ IDEA.
+ * Initial hello world controller with groovy
  * User: wpfeiffe
  * Date: Jan 12, 2010
- * Time: 5:18:02 AM
- * To change this template use File | Settings | File Templates.
  */
 
 @Controller
