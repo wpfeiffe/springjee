@@ -15,12 +15,8 @@
 
 <html lang="en">
 <head>
-    <base href="<c:url value="/"/>" target="_self"/>
-    <title>Bcrypt</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+  <base href="<c:url value="/"/>" target="_self"/>
+  <title>Bcrypt</title>
 </head>
 <body>
     <h1>Bcrypt</h1>

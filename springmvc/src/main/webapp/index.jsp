@@ -32,22 +32,8 @@
 </head>
 <body >
 <div class="container" style="margin-top: 10px">
-    <!-- Navbar -->
-    <div id="mainnav" class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <div class="nav-collapse">
-                    <ul class="nav nav-pills">
-                        <li class="active"><a href="./listemp.htm">Home</a></li>
-                        <li class=""><a href="./addemp.htm">Add Emp</a></li>
-                        <li class=""><a href="./listemp.htm">List</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+  <!-- Navbar -->
+  <%@ include file="jsp/includes/navbar.jspf" %>
 </div>
 </body>
 </html>

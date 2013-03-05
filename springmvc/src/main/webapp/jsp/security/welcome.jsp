@@ -15,13 +15,9 @@
 <html lang="en">
 <head>
     <base href="<c:url value="/"/>" target="_self"/>
-    <title>Login</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <title>Welcome</title>
 </head>
-<body>
+<body class="container" style="margin-top: 10px">
     <h3>${msg}</h3>
     <h3>Username : ${user}</h3>
     <a href="<c:url value="/j_spring_security_logout" />" > Logoff</a>

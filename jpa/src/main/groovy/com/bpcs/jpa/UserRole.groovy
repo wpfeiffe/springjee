@@ -39,4 +39,9 @@ class UserRole implements Serializable, GrantedAuthority
     {
         roleName
     }
+
+    String toString()
+    {
+        roleName
+    }
 }

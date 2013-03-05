@@ -23,8 +23,18 @@ class UserController
     public ModelAndView listUsers()
     {
         ModelAndView mav = new ModelAndView()
-        mav.addObject("userList", userSvc.getAllUsers())
-        mav.setView("/jsp/user/list")
+        mav.addObject("users", userSvc.getAllUsers())
+        mav.setViewName("/jsp/user/list")
         return mav
     }
+
+    @RequestMapping("/show")
+    public ModelAndView editUser(Long userId)
+    {
+        ModelAndView modelAndView = new ModelAndView()
+        modelAndView.addObject("user", userSvc.getUserById(userId))
+        modelAndView.setViewName("/jsp/user/show")
+        return modelAndView
+    }
+
 }

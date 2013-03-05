@@ -14,13 +14,14 @@ import org.springframework.web.servlet.ModelAndView
  * Date: 1/31/13
  */
 @Controller
+@RequestMapping(value = "/bcrypt")
 class BcryptController
 {
     /**
      * Init to show the bcrypt page
      * @return ModelAndView
      */
-    @RequestMapping(value = "/bcrypt", method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     public ModelAndView init()
     {
         ModelAndView mav = new ModelAndView()
@@ -33,7 +34,7 @@ class BcryptController
      * @param textToEncode
      * @return ModelAndView
      */
-    @RequestMapping(value = "/bcrypt", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     public ModelAndView encryptText(@RequestParam("encode_text") String textToEncode)
     {
         ModelAndView mav = new ModelAndView()
