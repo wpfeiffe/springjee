@@ -67,9 +67,7 @@
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/antlr/antlr/2.7.7/jar/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/antlr/antlr/2.7.7/source/36cbe3aa39fa595d24c4eac9f89b009b6ed62560/antlr-2.7.7-sources.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="PROVIDED">
@@ -166,9 +164,7 @@
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.xml/jaxrpc-api/1.1/jar/64e6fa9461f714ab2c1a66d552e3200e66d2510b/jaxrpc-api-1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/javax.xml/jaxrpc-api/1.1/source/a7321ae8dfa2b1c035faea9020b8a9af5283c0f2/jaxrpc-api-1.1-sources.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="PROVIDED">
@@ -364,9 +360,7 @@
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/com.sun.faces/jsf-api/2.0.3-b05/jar/d959dddbb55c2e9b83dab786967e0680d385cd93/jsf-api-2.0.3-b05.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/com.sun.faces/jsf-api/2.0.3-b05/source/ad5e2acd46933170231fd5e05238c7c98ef23f5f/jsf-api-2.0.3-b05-sources.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="PROVIDED">
@@ -430,9 +424,7 @@
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/stax/stax-api/1.0.1/jar/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/stax/stax-api/1.0.1/source/6933491b044d80ea4fa283cb3cf8681d6bc4cbbf/stax-api-1.0.1-sources.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="PROVIDED">
@@ -705,9 +697,7 @@
           <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/antlr/antlr/2.7.7/jar/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/antlr/antlr/2.7.7/source/36cbe3aa39fa595d24c4eac9f89b009b6ed62560/antlr-2.7.7-sources.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
