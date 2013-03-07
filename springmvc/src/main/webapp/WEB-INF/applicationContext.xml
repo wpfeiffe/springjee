@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans:beans xmlns="http://www.springframework.org/schema/security"
-       xmlns:beans="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/security
        http://www.springframework.org/schema/security/spring-security.xsd">
 
-    <http auto-config='true'>
-        <!--<intercept-url pattern="/login.htm" access="IS_AUTHENTICATED_ANONYMOUSLY" requires-channel="https"/>-->
-        <!--<intercept-url pattern="/failLogin.htm" access="IS_AUTHENTICATED_ANONYMOUSLY" requires-channel="https"/>-->
-        <!--<intercept-url pattern="/**/spring_security_login**" access="ROLE_USER" requires-channel="https"/>-->
-        <intercept-url pattern="/login.htm" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-        <intercept-url pattern="/failLogin.htm" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-        <intercept-url pattern="/**/spring_security_login**" access="ROLE_USER"/>
-        <intercept-url pattern="/js/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-        <intercept-url pattern="/img/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-        <intercept-url pattern="/images/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-        <intercept-url pattern="/css/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-        <intercept-url pattern="/**" access="ROLE_USER" requires-channel="any"/>
-        <form-login login-page='/login.htm'
-                    default-target-url="/index.htm"
-                    authentication-failure-url="/failLogin.htm"/>
+  <http auto-config='true'>
+    <!--<intercept-url pattern="/login.htm" access="IS_AUTHENTICATED_ANONYMOUSLY" requires-channel="https"/>-->
+    <!--<intercept-url pattern="/failLogin.htm" access="IS_AUTHENTICATED_ANONYMOUSLY" requires-channel="https"/>-->
+    <!--<intercept-url pattern="/**/spring_security_login**" access="ROLE_USER" requires-channel="https"/>-->
+    <intercept-url pattern="/login.htm" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/failLogin.htm" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/**/spring_security_login**" access="ROLE_USER"/>
+    <intercept-url pattern="/js/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/img/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/images/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/css/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/**" access="ROLE_USER,ROLE_ADMIN" requires-channel="any"/>
+    <form-login login-page='/login.htm'
+                default-target-url="/index.htm"
+                authentication-failure-url="/failLogin.htm"/>
+  </http>
 
-    </http>
+  <beans:bean id="WebUserDetailsService" class="com.bpcs.security.WebUserDetailsService" scope="singleton"/>
+  <beans:bean id="encoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
 
-    <authentication-manager>
-        <authentication-provider>
-            <!--<password-encoder hash="sha"/>-->
-            <user-service>
-                <user name="admin" password="Password1" authorities="ROLE_USER, ROLE_ADMIN"/>
-                <user name="wpfeiffe" password="Password1" authorities="ROLE_USER"/>
-                <!--<user name="admin" password="da39a3ee5e6b4b0d3255bfef95601890afd80709" authorities="ROLE_USER, ROLE_ADMIN"/>-->
-                <!--<user name="wpfeiffe" password="da39a3ee5e6b4b0d3255bfef95601890afd80709" authorities="ROLE_USER"/>-->
-            </user-service>
-        </authentication-provider>
-    </authentication-manager>
+  <authentication-manager>
+    <authentication-provider user-service-ref="WebUserDetailsService">
+      <password-encoder ref="encoder" />
+    </authentication-provider>
+  </authentication-manager>
 
+  <beans:bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor">
+    <beans:property name="alwaysUseJndiLookup" value="true"/>
+  </beans:bean>
 </beans:beans>

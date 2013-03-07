@@ -1,0 +1,14 @@
+<div id="mainnav" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <div class="nav-collapse">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="/">Home</a></li>
+          <li class=""><a href="./addemp.htm">Add Emp</a></li>
+          <li class=""><a href="./listemp.htm">List</a></li>
+          <li class=""><a href="./bcrypt.htm">BCrypt</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

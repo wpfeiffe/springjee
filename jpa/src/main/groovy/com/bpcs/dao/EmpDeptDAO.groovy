@@ -6,11 +6,10 @@ import javax.persistence.Persistence
 import javax.persistence.PersistenceContext
 
 /**
- * Created with IntelliJ IDEA.
+ * Data access around the employee and department entities
  * User: wpfeiffe
  * Date: 8/25/12
  * Time: 11:55 PM
- * To change this template use File | Settings | File Templates.
  */
 class EmpDeptDAO
 {
