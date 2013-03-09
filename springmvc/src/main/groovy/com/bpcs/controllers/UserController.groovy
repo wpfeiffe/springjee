@@ -19,6 +19,10 @@ class UserController
     @EJB(mappedName = "java:module/UserSvc")
     UserSvc userSvc
 
+    /**
+     * Lists all users
+     * @return ModelAndView with users
+     */
     @RequestMapping("/list")
     public ModelAndView listUsers()
     {
@@ -28,6 +32,11 @@ class UserController
         return mav
     }
 
+    /**
+     * Shows user identified by the user id
+     * @param userId Id of user to show
+     * @return ModelAndView with user
+     */
     @RequestMapping("/show")
     public ModelAndView editUser(Long userId)
     {

@@ -15,11 +15,19 @@ class EmpDeptDAO
 {
     EntityManager em;
 
+    /**
+     * initializes dao with EntityManager
+     * @param em
+     */
     EmpDeptDAO(EntityManager em)
     {
         this.em = em
     }
 
+    /**
+     * gets all employees in db
+     * @return List of all employees
+     */
     List getAllEmployees()
     {
         List emps = em.createQuery("select emp from Employee emp").getResultList()

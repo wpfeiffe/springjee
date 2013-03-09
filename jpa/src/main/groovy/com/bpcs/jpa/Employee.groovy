@@ -19,35 +19,68 @@ import javax.persistence.Column
 @Entity
 class Employee implements Serializable
 {
+    /**
+     * Employee identifier
+     */
     @Id @GeneratedValue Long id
 
+    /**
+     * ORM version for optimistic locking
+     */
     @Version Long version
 
+    /**
+     * first name
+     */
     @Column(name="FIRST_NAME")
     @Basic String firstName
 
+    /**
+     * last name
+     */
     @Column(name="LAST_NAME")
     @Basic String lastName
 
+    /**
+     * Social Security Number
+     */
     @Column(name="SSN")
     @Basic String ssn
 
+    /**
+     * Job title
+     */
     @Column(name="TITLE")
     @Basic String title
 
+    /**
+     * indicates if employee is active
+     */
     @Column(name="ACTIVE")
     @Basic Boolean active
 
+    /**
+     * Employee start date
+     */
     @Column(name="START_DATE")
     @Basic Date startDate
 
+    /**
+     * Text about the employee
+     */
     @Column(name="EMPLOYEE_TEXT")
     @Basic String employeeText
 
+    /**
+     * Department of the employee
+     */
     @ManyToOne(optional=false)
     @JoinColumn(name="DEPARTMENT_ID")
     Department dept;
 
+    /**
+     * basic constructor
+     */
     public Employee()
     {
         // set some defaults for new emps
@@ -56,6 +89,13 @@ class Employee implements Serializable
         this.employeeText = "This is an employee"
     }
 
+    /**
+     * Full constructor
+     * @param firstName
+     * @param lastName
+     * @param ssn
+     * @param title
+     */
     public Employee(String firstName, String lastName, String ssn, String title)
     {
         this.firstName = firstName
@@ -68,6 +108,10 @@ class Employee implements Serializable
 
     }
 
+    /**
+     * toString
+     * @return string value of Employee
+     */
     public String toString()
     {
         return "Employee ID: $id, Version: $version, First: $firstName, Last: $lastName, SSN: $ssn, Title: $title, Dept:${dept.deptName} "

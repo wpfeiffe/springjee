@@ -13,6 +13,10 @@ import org.springframework.web.servlet.ModelAndView
 @RequestMapping("/bootstrap")
 class BootstrapController
 {
+    /**
+     * controller simply add hello value and sets matching view
+     * @return ModelAndView with hello value and matching view
+     */
     @RequestMapping("/show")
     ModelAndView doShow()
     {

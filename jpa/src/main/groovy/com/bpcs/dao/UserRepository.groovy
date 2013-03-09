@@ -13,7 +13,24 @@ import org.springframework.data.repository.CrudRepository
  */
 public interface UserRepository extends CrudRepository<User, Integer>
 {
+    /**
+     * Find User by login
+     * @param login
+     * @return User for given login
+     */
     User findByLogin(String login);
+
+    /**
+     * Find User by id
+     * @param id
+     * @return User for given id
+     */
     User findById(Long id);
+
+    /**
+     * Find roles for a user with a given login
+     * @param login Login of user
+     * @return List of roles for user with the given login
+     */
     List<UserRole> findRolesByLogin(String login);
 }

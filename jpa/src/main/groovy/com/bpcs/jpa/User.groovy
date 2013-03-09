@@ -20,28 +20,55 @@ import javax.persistence.Version
 @Table(name = "USER_ACCT")
 class User implements Serializable
 {
+    /**
+     * Id for this User
+     */
     @Id @GeneratedValue @Column(name = "USER_ID") Long id
 
+    /**
+     * version for ORM optimistic locking
+     */
     @Version @Column(name = "VERSION") Long version
 
+    /**
+     * User login value
+     */
     @Column(name = "LOGIN", unique = true)
     @Basic String login
 
+    /**
+     * encrypted password value
+     */
     @Column(name = "PASSWORD")
     @Basic String password
 
+    /**
+     * Date of credential expiration
+     */
     @Column(name = "CRED_EXPIRE_DATE")
     @Basic Date credExpireDate
 
+    /**
+     * Date the account expires
+     */
     @Column(name = "ACCT_EXPIRE_DATE")
     @Basic Date acctExpireDate
 
+    /**
+     * Flag indicates if this User account is locked
+     */
     @Column(name =  "ACCT_LOCKED")
     @Basic Boolean acctLocked
 
+    /**
+     * Flag indicates if this User account is enabled
+     */
     @Column(name =  "ACCT_ENABLED")
     @Basic Boolean acctEnabled
 
+    /**
+     * List of roles for this given user
+     */
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     List<UserRole> roles
 

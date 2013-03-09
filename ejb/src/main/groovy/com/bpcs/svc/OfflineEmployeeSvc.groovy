@@ -27,11 +27,18 @@ class OfflineEmployeeSvc
     @Resource(name = "java:/queue/employee")
     private Queue queue
 
+    /**
+     * Empty constructor
+     */
     public OfflineEmployeeSvc()
     {
 
     }
 
+    /**
+     * puts employee to update on JMS queue for offline processing (save)
+     * @param emp Employee to persist
+     */
     public void updateEmployeeLater(Employee emp)
     {
         Connection connection = connectionFactory.createConnection()

@@ -27,8 +27,16 @@ public class EmployeeMessageBean implements MessageListener
     @EJB
     EmployeeSvc employeeSvc;
 
+    /**
+     * empty constructor
+     */
     public EmployeeMessageBean() {}
 
+
+    /**
+     * JMS call handles offline add of Employee using the Employee service
+     * @param message Employee to be added
+     */
     public void onMessage(Message message)
     {
         Employee employee;
