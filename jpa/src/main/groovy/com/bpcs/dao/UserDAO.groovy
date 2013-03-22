@@ -14,11 +14,19 @@ class UserDAO
 {
     EntityManager em;
 
+    /**
+     * Construct with EnitityManager
+     * @param em EntityManager
+     */
     UserDAO(EntityManager em)
     {
         this.em = em
     }
 
+    /**
+     * Get all users
+     * @return List of all User objects
+     */
     List<User> getAllUsers()
     {
         List<User> users = em.createQuery("select user from User user").getResultList()

@@ -24,6 +24,11 @@ class EmployeeController
     @EJB(mappedName="java:module/OfflineEmployeeSvc")
     OfflineEmployeeSvc offlineEmployeeSvc
 
+    /**
+     * Fills ModelAndView with list of employees, message, single emp for testing
+     * forwards to /jsp/twitboot/listemp
+     * @return ModelAndView with list of employees, message, single emp for testing
+     */
     @RequestMapping("/listemp")
     public ModelAndView listEmployees()
     {
@@ -40,6 +45,10 @@ class EmployeeController
         return mav
     }
 
+    /**
+     * Adds a new random employee, retrieve all employees after add, and puts in a message
+     * @return  ModelAndView with ll employees after add, and a message
+     */
     @RequestMapping("/addemp")
     public ModelAndView addEmployee()
     {

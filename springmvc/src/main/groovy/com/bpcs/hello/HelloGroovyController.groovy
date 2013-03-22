@@ -16,6 +16,10 @@ import com.bpcs.svc.EmployeeSvc
 @Controller
 class HelloGroovyController
 {
+    /**
+     * Simple groovy test controller to show a message
+     * @return ModelAndView with message and employee list
+     */
     @RequestMapping("/helloGroovy")
     public ModelAndView helloGroovy()
     {

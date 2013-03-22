@@ -18,17 +18,34 @@ import javax.persistence.Column
 @Entity
 class Department implements Serializable
 {
+    /**
+     * id of department
+     */
     @Id @GeneratedValue Long id
     @Version Long version
 
+    /**
+     * department code
+     */
     @Column(name="DEPT_CODE")
     @Basic String deptCode
 
+    /**
+     * departement name
+     */
     @Column(name="DEPT_NAME")
     @Basic String deptName
 
+    /**
+     * Empty constructor
+     */
     public Department() {}
 
+    /**
+     * Constructor with data values
+     * @param deptCode
+     * @param deptName
+     */
     public Department(String deptCode, String deptName)
     {
         this.deptCode = deptCode
@@ -36,6 +53,10 @@ class Department implements Serializable
 
     }
 
+    /**
+     * Returns string representation of department
+     * @return string representation of department
+     */
     public String toString()
     {
         return "Department ID: $id, Version: $version, Name: $deptName, Code: $deptCode"

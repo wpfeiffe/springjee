@@ -4,8 +4,6 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 
 configurations {
-    endorsed
-    compile.extendsFrom endorsed
     provided
 }
 
@@ -21,7 +19,7 @@ dependencies {
     provided 'org.jboss.spec:jboss-javaee-6.0:1.0.0.Final'
     provided 'org.springframework.data:spring-data-jpa:1.2.0.RELEASE'
     provided 'org.infinispan:infinispan-core:5.1.7.Final'
-    endorsed 'org.jboss.spec.javax.annotation:jboss-annotations-api_1.1_spec:1.0.0.Final'
+    provided 'org.springframework.security:spring-security-core:3.1.3.RELEASE'
     compile project(':jpa') {
         transitive = false
     }
@@ -40,13 +38,4 @@ eclipse {
   classpath {
     plusConfigurations += configurations.provided
   }
-}
-
-task stageEndorsed(type: Sync) {
-    from configurations.endorsed
-    into temporaryDir
-}
-tasks.withType(Compile) {
-    dependsOn stageEndorsed
-    options.compilerArgs << "-Djava.endorsed.dirs=${stageEndorsed.destinationDir}"
 }

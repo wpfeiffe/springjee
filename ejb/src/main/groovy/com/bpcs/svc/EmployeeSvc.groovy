@@ -17,11 +17,9 @@ import javax.ejb.Local
 import javax.annotation.Resource;
 
 /**
- * Created with IntelliJ IDEA.
+ * Employee service handle add /update of employees.  Utilizes JPA for persistence and Infinispan for caching
  * User: wpfeiffe
  * Date: 8/24/12
- * Time: 10:36 PM
- * To change this template use File | Settings | File Templates.
  */
 @javax.ejb.Stateless(name = "EmployeeSvc")
 @Local(EmployeeSvc.class)
@@ -46,6 +44,9 @@ public class EmployeeSvc
     private org.infinispan.manager.CacheContainer container;
     private org.infinispan.Cache<String, Object> cache;
 
+    /**
+     * init called at PostConstruct.  Initializes Spring Data repositories and cache.
+     */
     @PostConstruct
     public void init() {
        RepositoryFactorySupport factory = new JpaRepositoryFactory(em);
@@ -54,55 +55,92 @@ public class EmployeeSvc
        this.cache = this.container.getCache();
     }
 
+    /**
+     * Empty constructor
+     */
     public EmployeeSvc()
     {
     }
 
+    /**
+     * Echos input with "EJB " prepended
+     * @param src input value
+     * @return "EJB " prepended string
+     */
     public String doEcho(String src)
     {
         return "EJB " + src;
     }
 
+    /**
+     * Return list of all employees in the db
+     * @return list of employess
+     */
     public List getEmployees()
     {
         List emps;
         EmpDeptDAO empdao = new EmpDeptDAO(em);
+
+        // look first in the cache
         List cachedEmployees = cache.get(EmployeeSvc.EMP_CACHE)
 
+        // if found in cache
         if (cachedEmployees != null)
         {
+            // return what is found
             emps = cachedEmployees
         }
+        // test of empdao not null
         else if (empdao != null)
         {
-            emps = empdao.getAllEmployees();
+            // getall emps from db and put in cache
+            emps = empdao.getAllEmployees()
             cache.put(EmployeeSvc.EMP_CACHE, emps)
         }
+        // nothing else worked, return empty list
         else
         {
-            emps = new ArrayList();
+            emps = new ArrayList()
         }
-        return emps;
+        return emps
     }
 
+    /**
+     * Get employee for given id
+     * @param id Employee id to find
+     * @return Employee found
+     */
     public Employee getSpringJPAEmployee(Long id)
     {
         return employeeRepository.findById(id);
     }
 
+    /**
+     * Use spring data to find all employees with first name john
+     * @return Employees with first name John
+     */
     public List<Employee> getJohns()
     {
         return employeeRepository.findByFirstName("John");
     }
 
+    /**
+     * Uses static lists of values to create a random employee record
+     * @return generated Employee
+     */
     public Employee buildRandomEmployee()
     {
+        // new empty emp
         Employee randomEmployee = new Employee()
+
+        // select random values from lists or number
         randomEmployee.firstName = firstNames[random.nextInt(7)]
         randomEmployee.lastName = lastNames[random.nextInt(7)]
         int deptTitleIndex = random.nextInt(5)
         randomEmployee.dept = departmentRepository.findByDeptCode(departments[deptTitleIndex])
         randomEmployee.title = titles[deptTitleIndex]
+
+        // build random ssn
         randomEmployee.ssn = ""
         for (int i = 1; i <= 9; i++)
         {
@@ -112,12 +150,19 @@ public class EmployeeSvc
                 randomEmployee.ssn += "-"
             }
         }
+
         return randomEmployee
     }
 
+    /**
+     * Persists the given new employee
+     * @param newEmployee Employee to addd
+     */
     public void addNewEmp(Employee newEmployee)
     {
         employeeRepository.save(newEmployee)
+
+        // invalidate cache
         cache.remove(EmployeeSvc.EMP_CACHE)
     }
 }

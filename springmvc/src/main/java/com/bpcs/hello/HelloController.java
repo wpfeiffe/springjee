@@ -5,16 +5,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- * Created by IntelliJ IDEA.
+ * Simple java controller to show hello message
  * User: wpfeiffe
  * Date: Jan 7, 2010
  * Time: 11:59:13 PM
- * To change this template use File | Settings | File Templates.
  */
 @Controller
 @RequestMapping("/test")
 public class HelloController
 {
+    /**
+     * shows hello message
+     * @return ModelAndView with hello message
+     */
     @RequestMapping("/hello")
     public ModelAndView hello()
     {

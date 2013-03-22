@@ -28,6 +28,9 @@ public class UserSvc
     private UserRepository userRepository
     private UserDAO userDAO
 
+    /**
+     * method for EJB PostConstruct call
+     */
     @PostConstruct
     public void init()
     {
@@ -36,21 +39,38 @@ public class UserSvc
         this.userDAO = new UserDAO(em)
     }
 
+    /**
+     * Empty constructor
+     */
     public UserSvc()
     {
     }
 
+    /**
+     * Returns User object for the given id
+     * @param id User id
+     * @return Found User object
+     */
     public User getUserById(Long id)
     {
         return userRepository.findById(id)
     }
 
+    /**
+     * Returns User for given login string
+     * @param login Login string
+     * @return User for the given login string
+     */
     public User getUserByLogin(String login)
     {
         User user = userRepository.findByLogin(login)
         return user
     }
 
+    /**
+     * Gets all users in the db
+     * @return List of all users in the db
+     */
     public List<User> getAllUsers()
     {
         return userDAO.getAllUsers()
