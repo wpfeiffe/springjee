@@ -9,14 +9,14 @@
       <setting name="command_line-tab" />
       <setting name="setup-tab">
         <setting name="setup">
-          <setting name="custom-gradle-executor" value="/usr/share/gradle/gradle-1.4/bin/gradle" />
-          <setting name="current-directory" value="$PROJECT_DIR$" />
+          <setting name="custom-gradle-executor" value="C:\groovy\gradle\gradle-1.4\bin\gradle.bat" />
+          <setting name="current-directory" value="C:\work\GitHub\SpringJeeHelloWorld" />
           <setting name="log-level" value="LIFECYCLE" />
           <setting name="stack-trace-level" value="ALWAYS_FULL" />
         </setting>
       </setting>
       <setting name="main_panel">
-        <setting name="current-tab" value="Command Line" />
+        <setting name="current-tab" value="Task Tree" />
       </setting>
     </setting>
   </component>

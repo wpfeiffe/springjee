@@ -35,6 +35,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/groovy" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/integrationTest/groovy" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/integrationTest/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/integrationTest/resources" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -355,11 +358,11 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.groovy/groovy/2.1.0/jar/42465a916fb1c4762bf1ebb58ed651303ae830c1/groovy-2.1.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.groovy/groovy/2.0.7/jar/6f9e4fcfff574b9e9e7cc79d1db07fb24f5c7fca/groovy-2.0.7.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.groovy/groovy/2.1.0/source/6fd15c81dd088d64b5fe0c6142e7dc1766a3d9b2/groovy-2.1.0-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.groovy/groovy/2.0.7/source/c45897534b5d852e75be4fda7949882850d309c/groovy-2.0.7-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -682,11 +685,253 @@
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/junit/junit/4.7/jar/d9444742a5b897c6280724a49f57a8155517d21f/junit-4.7.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/junit/junit/4.11/jar/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/junit/junit/4.7/source/b75d1751cddae5eaa612e5926ec76987caed08df/junit-4.7-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/junit/junit/4.11/source/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.spockframework/spock-core/0.7-groovy-2.0/jar/4de0b428de0c14b6eb6375d8174f71848cbfc1d7/spock-core-0.7-groovy-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.spockframework/spock-core/0.7-groovy-2.0/source/19f1e62a5094604766f83e55a693b9cdac3b271a/spock-core-0.7-groovy-2.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.gebish/geb-spock/0.9.0-RC-1/jar/67f76eca13815ae9c082f48dc51a655ebaeb7bd4/geb-spock-0.9.0-RC-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.gebish/geb-spock/0.9.0-RC-1/source/9d1475261a982bd5e17ba347bc836806a71f505d/geb-spock-0.9.0-RC-1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-firefox-driver/2.31.0/jar/ad90ae46744e441b98c0d06cace1b37ba1772208/selenium-firefox-driver-2.31.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-firefox-driver/2.31.0/source/163bdc9cdd9aadf140574b89a423e3b49faff250/selenium-firefox-driver-2.31.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-chrome-driver/2.31.0/jar/ae0c85967302907ee04a79be0cc65e2ca182967b/selenium-chrome-driver-2.31.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-chrome-driver/2.31.0/source/fe46032515a9e09805d1542df0691e957e3da95b/selenium-chrome-driver-2.31.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-ie-driver/2.31.0/jar/14152c64bab1a2206596e5b71e5d383cfa45d0df/selenium-ie-driver-2.31.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-ie-driver/2.31.0/source/d7a70027e13ecc18f6c7744ce1401edfb6969db1/selenium-ie-driver-2.31.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.hamcrest/hamcrest-core/1.3/jar/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.hamcrest/hamcrest-core/1.3/source/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/junit/junit-dep/4.10/jar/64417b3bafdecd366afa514bd5beeae6c1f85ece/junit-dep-4.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/junit/junit-dep/4.10/source/2c7dad0a5eb1602c6fe6b43abec8ea35805b3ae4/junit-dep-4.10-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.groovy/groovy-all/2.0.5/jar/caef1126e5358bf1327e8b4381a827da9accbb47/groovy-all-2.0.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.groovy/groovy-all/2.0.5/source/77c137f40bebfc3d9c49f6bf819840b613f60d18/groovy-all-2.0.5-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.gebish/geb-implicit-assertions/0.9.0-RC-1/jar/730e786048058bb5154d888e26468dd23ff02869/geb-implicit-assertions-0.9.0-RC-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.gebish/geb-implicit-assertions/0.9.0-RC-1/source/458e69ee929f4be10b76bff30eec26ce3887fd5d/geb-implicit-assertions-0.9.0-RC-1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.gebish/geb-core/0.9.0-RC-1/jar/c4e2110a0b7906d69670c89f06879d107d93f5de/geb-core-0.9.0-RC-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.gebish/geb-core/0.9.0-RC-1/source/45887bd3fc7ec09cf39566fd03142ee3a350c964/geb-core-0.9.0-RC-1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.apache.commons/commons-exec/1.1/jar/7dfdf16fade726000564386825ed6d911a44ba1/commons-exec-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.apache.commons/commons-exec/1.1/source/f60bea898e18b308099862e8634d589b06a8b0be/commons-exec-1.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/net.java.dev.jna/jna/3.4.0/jar/803ff252fedbd395baffd43b37341dc4a150a554/jna-3.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/net.java.dev.jna/jna/3.4.0/source/2f42653596d0044f0ab456620cba54c9cf53c5ca/jna-3.4.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/net.java.dev.jna/platform/3.4.0/jar/e3f70017be8100d3d6923f50b3d2ee17714e9c13/platform-3.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/net.java.dev.jna/platform/3.4.0/source/2f42653596d0044f0ab456620cba54c9cf53c5ca/platform-3.4.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/cglib/cglib-nodep/2.1_3/jar/58d3be5953547c0019e5704d6ed4ffda3b0c7c66/cglib-nodep-2.1_3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/cglib/cglib-nodep/2.1_3/source/fd60a4ee07d2bce9fffcb2a3d88bdcdc1011ea5b/cglib-nodep-2.1_3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.json/json/20080701/jar/d652f102185530c93b66158b1859f35d45687258/json-20080701.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.json/json/20080701/source/71bd54221e701df9d112bf9ba2918e13b0671f3a/json-20080701-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/com.google.guava/guava/14.0/bundle/67b7be4ee7ba48e4828a42d6d5069761186d4a53/guava-14.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/com.google.guava/guava/14.0/source/c4e65085e00a033348b5417106b13e2ad2987ffc/guava-14.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-api/2.31.0/jar/f432348b6c1aaf18410720fe58ab3017231de863/selenium-api-2.31.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-api/2.31.0/source/5be77460dcd2fccf7287700c44d481d3d495707a/selenium-api-2.31.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.apache.httpcomponents/httpcore/4.2.1/jar/2d503272bf0a8b5f92d64db78b4ba9abbaccc6fd/httpcore-4.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.apache.httpcomponents/httpcore/4.2.1/source/3f6caf5334fa83607b82e2f32dd128a9d8a0ea5e/httpcore-4.2.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/commons-codec/commons-codec/1.6/jar/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/commons-codec/commons-codec/1.6/source/61e9f9d11fe3e12ec62f633006e99d75fd7f19c8/commons-codec-1.6-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.apache.httpcomponents/httpclient/4.2.1/jar/b69bd03af60bf487b3ae1209a644ecac587bf6fc/httpclient-4.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.apache.httpcomponents/httpclient/4.2.1/source/6b27312b9c28b59aaeb6c21f3490045690c703d3/httpclient-4.2.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-remote-driver/2.31.0/jar/ad0881a7a0f09d753d1e3e471c390cfa3e1efadc/selenium-remote-driver-2.31.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-remote-driver/2.31.0/source/1c4580bf90f5ec6ffee7521a80d627ab2775e411/selenium-remote-driver-2.31.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/commons-io/commons-io/2.2/jar/83b5b8a7ba1c08f9e8c8ff2373724e33d3c1e22a/commons-io-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-23/filestore/commons-io/commons-io/2.2/source/8d6b98f21262995489a8418fff8da992d7e25c1e/commons-io-2.2-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
