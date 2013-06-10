@@ -18,6 +18,7 @@
     <intercept-url pattern="/img/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
     <intercept-url pattern="/images/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
     <intercept-url pattern="/css/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/api/**" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
     <intercept-url pattern="/**" access="ROLE_USER,ROLE_ADMIN" requires-channel="any"/>
     <form-login login-page='/login.htm'
                 default-target-url="/index.htm"

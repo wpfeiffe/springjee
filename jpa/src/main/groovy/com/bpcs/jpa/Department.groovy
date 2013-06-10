@@ -37,6 +37,12 @@ class Department implements Serializable
     @Basic String deptName
 
     /**
+     * departement text
+     */
+    @Column(name="DEPARTMENT_TEXT")
+    @Basic String deptText
+
+    /**
      * Empty constructor
      */
     public Department() {}
@@ -46,10 +52,11 @@ class Department implements Serializable
      * @param deptCode
      * @param deptName
      */
-    public Department(String deptCode, String deptName)
+    public Department(String deptCode, String deptName, String deptText)
     {
         this.deptCode = deptCode
         this.deptName = deptName
+        this.deptText = deptText
 
     }
 
@@ -59,7 +66,7 @@ class Department implements Serializable
      */
     public String toString()
     {
-        return "Department ID: $id, Version: $version, Name: $deptName, Code: $deptCode"
+        return "Department ID: $id, Version: $version, Name: $deptName, Code: $deptCode, Text: $deptText"
     }
 
 
