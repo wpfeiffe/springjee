@@ -1,9 +1,9 @@
 var App = {};
 
 require.config({
-    baseUrl: '/grails-backbone/js',
+    baseUrl: '/springmvc/js',
     paths: {
-        jquery: 'jquery/jquery-1.8.3',
+        jquery: 'jquery-1.8.1.min',
         underscore: 'underscore',
         backbone: 'backbone',
         text: 'text',
@@ -26,7 +26,7 @@ require.config({
     }
 });
 
-require(['backbook'], function (Backbook) {
-    App.backbook = new Backbook();
+require(['backdept'], function (BackDept) {
+    App.backdept = new BackDept();
     console.info("Hello main.js");
 });

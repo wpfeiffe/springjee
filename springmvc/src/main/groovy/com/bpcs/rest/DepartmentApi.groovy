@@ -38,14 +38,14 @@ class DepartmentApi
         return departmentSvc.getDepartment(Long.parseLong(id))
     }
 
-    @RequestMapping(value="/department", method=RequestMethod.PUT)
+    @RequestMapping(value="/department", method=RequestMethod.POST)
     @ResponseBody
     public Department addDepartment(@RequestBody Department department)
     {
         return departmentSvc.addOrUpdateDepartment(department)
     }
 
-    @RequestMapping(value="/department/{id}", method=RequestMethod.POST)
+    @RequestMapping(value="/department/{id}", method=RequestMethod.PUT)
     @ResponseBody
     public Department updateDepartment(@PathVariable("id") String id,
                                        @RequestBody Department department)

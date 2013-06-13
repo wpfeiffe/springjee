@@ -18,7 +18,6 @@
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.ow2.asm/asm-util/4.0/jar/d7a65f54cda284f9706a750c23d64830bb740c39/asm-util-4.0.jar" />
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.aspectj/aspectjrt/1.6.12/jar/4b430390f227beba9a0e97117f5a23003caafeb3/aspectjrt-1.6.12.jar" />
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/commons-logging/commons-logging/1.1.1/jar/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.groovy/groovy/2.1.0/jar/42465a916fb1c4762bf1ebb58ed651303ae830c1/groovy-2.1.0.jar" />
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.slf4j/jcl-over-slf4j/1.6.1/jar/99c61095a14dfc9e47a086068033c286bf236475/jcl-over-slf4j-1.6.1.jar" />
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/opensymphony/sitemesh/2.4.2/jar/4cb3b08c96553b0f4595a80917838ca302f67f3f/sitemesh-2.4.2.jar" />
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.slf4j/slf4j-api/1.6.1/jar/6f3b8a24bf970f17289b234284c94f43eb42f0e4/slf4j-api-1.6.1.jar" />
@@ -43,6 +42,7 @@
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.jackson/jackson-core-asl/1.9.12/jar/ecfc6f73a841c4c3c653b59651a3f9d5f1286469/jackson-core-asl-1.9.12.jar" />
           <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.jackson/jackson-mapper-asl/1.9.12/jar/8b290aae44213e2f6da00c07af59b0d442068f4d/jackson-mapper-asl-1.9.12.jar" />
           <element id="library" level="project" name="groovy-2.0.8" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/artifacts-23/filestore/org.codehaus.groovy/groovy/2.0.8/jar/c4e59e82deb7a40d618818ab4b01ab3b4ffdaae6/groovy-2.0.8.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="springmvc/web/Web" />

@@ -118,9 +118,9 @@
     <orderEntry type="library" exported="" name="jcl-over-slf4j-1.6.1" level="project" />
     <orderEntry type="library" scope="TEST" name="selenium-chrome-driver-2.31.0" level="project" />
     <orderEntry type="library" exported="" name="groovy-2.0.8" level="project" />
-    <orderEntry type="module" module-name="ejb" exported="" />
     <orderEntry type="library" exported="" name="jackson-core-asl-1.9.12" level="project" />
     <orderEntry type="library" exported="" name="jackson-mapper-asl-1.9.12" level="project" />
+    <orderEntry type="module" module-name="ejb" exported="" />
   </component>
 </module>
 
