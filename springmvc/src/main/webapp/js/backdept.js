@@ -125,10 +125,11 @@ define([
         },
 
         renderDept: function (item) {
-            var bookView = new DeptView({
+            var deptView = new DeptView({
                 model: item
             });
-            this.$el.append(bookView.render().el);
+            var tempDeptView = deptView.render().el;
+            this.$el.append(tempDeptView);
         },
 
         bbdate: function(inDate)
