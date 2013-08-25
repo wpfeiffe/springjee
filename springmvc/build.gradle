@@ -25,7 +25,6 @@ repositories {
 ext.drivers = ["chrome"]
 
 dependencies {
-    groovy group: 'org.codehaus.groovy', name: 'groovy', version: '2.0.+'
 
     provided 'org.jboss.spec:jboss-javaee-6.0:1.0.0.Final'
 

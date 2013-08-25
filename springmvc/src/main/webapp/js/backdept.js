@@ -87,7 +87,7 @@ define([
 
             var formData = {};
 
-            $("#addDept div").children("input").each(function (i, el) {
+            $("#addDeptFS input").each(function (i, el) {
                 if ($(el).val() !== "") {
                     formData[el.id] = $(el).val();
                 }

@@ -20,6 +20,12 @@
   </script>
 </head>
 <body>
-Show = ${hello}
+<div class="span10 well">
+  Level 1 Column
+</div>
+<div class="row">
+  <div class="span6 well">Level 2</div>
+  <div class="span3 well">Show = ${hello}</div>
+</div>
 </body>
 </html>

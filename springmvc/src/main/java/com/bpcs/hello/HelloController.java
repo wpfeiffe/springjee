@@ -21,7 +21,7 @@ public class HelloController
     @RequestMapping("/hello")
     public ModelAndView hello()
     {
-        ModelAndView mav = new ModelAndView();
+        ModelAndView mav =  new ModelAndView();
         mav.setViewName("hello");
         mav.addObject("message", "Hello from the HelloController");
         return mav;
