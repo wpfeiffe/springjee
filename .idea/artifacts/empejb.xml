@@ -4,7 +4,6 @@
     <root id="archive" name="empejb.jar">
       <element id="module-output" name="ejb" />
       <element id="directory" name="META-INF">
-        <element id="javaee-facet-resources" facet="ejb/ejb/EJB" />
         <element id="file-copy" path="$PROJECT_DIR$/ejb/src/main/resources/META-INF/MANIFEST.MF" />
       </element>
     </root>

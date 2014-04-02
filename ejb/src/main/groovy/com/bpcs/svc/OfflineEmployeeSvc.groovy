@@ -1,5 +1,6 @@
 package com.bpcs.svc
 
+import javax.ejb.Stateless
 import javax.jms.ConnectionFactory
 import javax.annotation.Resource
 
@@ -10,18 +11,18 @@ import javax.jms.MessageProducer
 import javax.jms.ObjectMessage
 import javax.jms.Queue
 import javax.ejb.Local
-import javax.ejb.EJB
 
 /**
  * Employee services that operate offline via JMS
  * User: wpfeiffe
  * Date: 10/10/12
  */
-@javax.ejb.Stateless(name = "OfflineEmployeeSvc")
+@Stateless(name = "OfflineEmployeeSvc")
 @Local(OfflineEmployeeSvc.class)
 class OfflineEmployeeSvc
 {
-    @Resource(name = "java:/ConnectionFactory")
+//    @Resource(name = "java:/ConnectionFactory")
+    @Resource(name = "java:comp/DefaultJMSConnectionFactory")
     private ConnectionFactory connectionFactory
 
     @Resource(name = "java:/queue/employee")
