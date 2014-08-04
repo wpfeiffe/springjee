@@ -5,12 +5,11 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$USER_HOME$/.gvm/gradle/1.11" />
+        <option name="gradleHome" value="$USER_HOME$/.gvm/gradle/2.0" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ejb" />
-            <option value="$PROJECT_DIR$/jpa" />
             <option value="$PROJECT_DIR$/springmvc" />
           </set>
         </option>

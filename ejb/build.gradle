@@ -14,28 +14,28 @@ repositories {
 }
 
 dependencies {
-    provided group: 'org.codehaus.groovy', name: 'groovy', version: '2.0.+'
-    provided 'org.jboss.spec:jboss-javaee-6.0:1.0.0.Final'
-    provided 'org.springframework.data:spring-data-jpa:1.2.0.RELEASE'
-    provided 'org.infinispan:infinispan-core:5.1.7.Final'
-    provided 'org.springframework.security:spring-security-core:3.1.3.RELEASE'
-    compile project(':jpa')
-    testCompile group: 'junit', name: 'junit', version: '4.+'
-    testCompile ('org.spockframework:spock-core:0.7-groovy-2.0') {
-        exclude module: 'groovy-all'
+    provided "org.codehaus.groovy:groovy:$groovyVersion"
+    provided "org.jboss.spec:jboss-javaee-6.0:$jbossJavaeeVersion"
+    provided "org.springframework.data:spring-data-jpa:$springDataJpaVersion"
+    provided "org.infinispan:infinispan-core:$infinispanVersion"
+    provided "org.springframework.security:spring-security-core:$springSecurityVersion"
+    provided "org.hibernate:hibernate-core:$hibernateCoreVersion"
+    testCompile "junit:junit:$junitVersion"
+    testCompile ("org.spockframework:spock-core:$spockVersion") {
+        exclude module: "groovy-all"
     }
 }
 
 // optional: if using 'idea' plugin
 idea {
   module{
-    scopes.PROVIDED.plus += configurations.provided
+    scopes.PROVIDED.plus += [configurations.provided]
   }
 }
 
 // optional: if using 'eclipse' plugin
 eclipse {
   classpath {
-    plusConfigurations += configurations.provided
+    plusConfigurations += [configurations.provided]
   }
 }

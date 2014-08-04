@@ -1,10 +1,12 @@
 package com.bpcs.taglib;
 
-import org.springframework.web.util.ExpressionEvaluationUtils;
+//import org.springframework.web.util.ExpressionEvaluationUtils;
 
-import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.tagext.BodyTagSupport;
-import java.io.IOException;
+import javax.el.ELContext;
+import javax.el.ValueExpression;
+import javax.servlet.ServletContext;
+import javax.servlet.jsp.*;
+import javax.servlet.jsp.tagext.SimpleTagSupport;
 
 /**
  * Taglib to test Spring EL eval support
@@ -12,7 +14,7 @@ import java.io.IOException;
  * Date: 9/16/12
  *
  */
-public class TestEL extends BodyTagSupport
+public class TestEL extends SimpleTagSupport
 {
     private String testAttribute = "";
 
@@ -45,22 +47,23 @@ public class TestEL extends BodyTagSupport
      * @return tag directive value
      * @throws JspException
      */
-    public int doEndTag() throws JspException
+    public void doTag() throws JspException
     {
-        int returnValue = SKIP_BODY;
-
-        String output = (String)ExpressionEvaluationUtils.evaluate("testAttribute", testAttribute, String.class, pageContext);
 
         try
         {
-            pageContext.getOut().write(output);
-        }
-        catch(IOException e)
+            ServletContext servletContext = ((PageContext) this.getJspContext()).getServletContext();
+            JspApplicationContext jspAppContext = JspFactory.getDefaultFactory().getJspApplicationContext(servletContext);
+            ELContext elContext = this.getJspContext().getELContext();
+            ValueExpression valueExpression = jspAppContext.getExpressionFactory().createValueExpression(elContext, testAttribute, Object.class);
+            Object evaluatedValue = valueExpression.getValue(elContext);
+            JspWriter out = getJspContext().getOut();
+            out.print(evaluatedValue);
+            out.flush();
+        } catch (Exception ex)
         {
-            System.out.println(e.getMessage());
+            throw new JspException("Error in SimpleEvalTag tag", ex);
         }
 
-
-        return returnValue;
     }
 }

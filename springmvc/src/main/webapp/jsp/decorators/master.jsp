@@ -4,10 +4,12 @@
 <html>
   <head>
     <title>SpringJeeHelloWorld - <decorator:title /></title>
-    <link href="<c:url value="/css/bootstrap.css"/>" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
-    <script type="text/javascript" src="<c:url value="/js/jquery-1.8.1.min.js"/>"></script>
-    <script type="text/javascript" src="<c:url value="/js/bootstrap.js"/>"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
     <style>
       body {
         padding-top: 60px; /* When using the navbar-top-fixed */

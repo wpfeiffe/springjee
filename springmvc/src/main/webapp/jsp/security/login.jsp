@@ -16,11 +16,12 @@
 <head>
     <base href="<c:url value="/"/>" target="_self"/>
     <title>Login</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
-    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
     <style type="text/css">
       body {
         padding-top: 40px;

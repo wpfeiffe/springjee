@@ -1,1 +1,1 @@
-include 'ejb','jpa','springmvc'
+include 'ejb','springmvc'
